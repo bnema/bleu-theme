@@ -1,0 +1,19 @@
+/* Define Bleu theme - inspired by blue gradient wallpaper */
+@define-color background #050a14; /* Darker deep navy from wallpaper */
+@define-color foreground #e8f4f8; /* Light blue-white for text */
+@define-color muted-foreground #6bb6d6; /* Cyan blue for inactive elements */
+@define-color border #2d4a6b; /* Ocean blue for borders */
+@define-color card #1a2332; /* Dark blue for hover/card backgrounds */
+@define-color primary #5588cc; /* Pure blue for focus/active states */
+@define-color destructive #ff6b8a; /* Soft red that complements blue theme */
+@define-color warning #ffb347; /* Warm orange for warnings */
+
+/* Additional bleu theme colors */
+@define-color bleu-accent #4a7ba7; /* Sky blue for accents */
+@define-color bleu-highlight #6bb6d6; /* Cyan for highlights */
+@define-color bleu-info #87ceeb; /* Light sky blue for info */
+@define-color bleu-hint #4a7ba7; /* Sky blue for hints */
+@define-color bleu-comment #5a7a95; /* Muted blue for comments */
+
+/* Theme-specific aliases for base.css compatibility */
+@define-color theme-info @bleu-info;
