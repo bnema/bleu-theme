@@ -1,0 +1,209 @@
+# Bleu theme for Yazi file manager
+# Based on the VSCode Bleu theme color palette
+
+[manager]
+cwd = { fg = "#e8f4f8", bold = true }
+
+# Hovered
+hovered         = { fg = "#fefefe", bg = "#2d4a6b" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#050a14", bg = "#00d4ff", bold = true }
+find_position = { fg = "#ffb347", bg = "reset", bold = true }
+
+# Marker
+marker_selected = { fg = "#99FFE4", bg = "#99FFE4" }
+marker_copied   = { fg = "#ffb347", bg = "#ffb347" }
+marker_cut      = { fg = "#ff6b8a", bg = "#ff6b8a" }
+
+# Tab
+tab_active   = { fg = "#e8f4f8", bg = "#0f1520" }
+tab_inactive = { fg = "#708090", bg = "#050a14" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#070c16" }
+
+# Highlighting
+syntect_theme = ""
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#070c16", bg = "#070c16" }
+
+# Mode
+mode_normal = { fg = "#050a14", bg = "#5588cc", bold = true }
+mode_select = { fg = "#050a14", bg = "#99FFE4", bold = true }
+mode_unset  = { fg = "#050a14", bg = "#87ceeb", bold = true }
+
+# Progress
+progress_label  = { fg = "#e8f4f8", bold = true }
+progress_normal = { fg = "#5588cc", bg = "#2d4a6b" }
+progress_error  = { fg = "#ff6b8a", bg = "#2d4a6b" }
+
+# Permissions
+permissions_t = { fg = "#99FFE4" }
+permissions_r = { fg = "#ffb347" }
+permissions_w = { fg = "#ff6b8a" }
+permissions_x = { fg = "#00d4ff" }
+permissions_s = { fg = "#87ceeb" }
+
+[select]
+border   = { fg = "#5588cc" }
+active   = { fg = "#fefefe", bg = "#5588cc" }
+inactive = { fg = "#e8f4f8" }
+
+# Icons
+[which]
+mask            = { bg = "#0a1018" }
+cand            = { fg = "#00d4ff" }
+rest            = { fg = "#708090" }
+desc            = { fg = "#ffb347" }
+separator       = "  "
+separator_style = { fg = "#2d4a6b" }
+
+[input]
+border   = { fg = "#5588cc" }
+title    = { fg = "#e8f4f8" }
+value    = { fg = "#e8f4f8" }
+selected = { bg = "#2d4a6b" }
+
+[completion]
+border   = { fg = "#5588cc" }
+active   = { fg = "#fefefe", bg = "#5588cc" }
+inactive = { fg = "#e8f4f8" }
+
+[tasks]
+border  = { fg = "#5588cc" }
+title   = { fg = "#e8f4f8" }
+hovered = { fg = "#fefefe", bg = "#2d4a6b" }
+
+[pick]
+border   = { fg = "#5588cc" }
+active   = { fg = "#fefefe", bg = "#5588cc" }
+inactive = { fg = "#e8f4f8" }
+
+[help]
+border = { fg = "#5588cc" }
+title  = { fg = "#e8f4f8" }
+on     = { fg = "#99FFE4" }
+exec   = { fg = "#00d4ff" }
+desc   = { fg = "#708090" }
+hovered = { bg = "#2d4a6b", bold = true }
+footer  = { fg = "#e8f4f8", bg = "#070c16" }
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#87ceeb" },
+
+	# Videos
+	{ mime = "video/*", fg = "#ffb347" },
+	{ mime = "audio/*", fg = "#ffb347" },
+
+	# Archives
+	{ mime = "application/zip",             fg = "#ff6b8a" },
+	{ mime = "application/gzip",            fg = "#ff6b8a" },
+	{ mime = "application/x-tar",           fg = "#ff6b8a" },
+	{ mime = "application/x-bzip",          fg = "#ff6b8a" },
+	{ mime = "application/x-bzip2",         fg = "#ff6b8a" },
+	{ mime = "application/x-7z-compressed", fg = "#ff6b8a" },
+	{ mime = "application/x-rar",           fg = "#ff6b8a" },
+
+	# Documents
+	{ mime = "application/pdf", fg = "#ff6b8a" },
+
+	# Data
+	{ mime = "application/octet-stream", fg = "#87ceeb" },
+	{ mime = "application/x-executable", fg = "#99FFE4" },
+
+	# Empty files
+	{ mime = "inode/x-empty", fg = "#708090" },
+
+	# Special files
+	{ name = "*", is = "orphan", fg = "#ff6b8a" },
+	{ name = "*", is = "exec",   fg = "#99FFE4" },
+
+	# Fallback
+	{ name = "*", fg = "#e8f4f8" },
+]
+
+[icon]
+
+rules = [
+	# Programming
+	{ name = "*.rs", text = "", fg = "#ff6b8a" },
+	{ name = "*.go", text = "", fg = "#00d4ff" },
+	{ name = "*.js", text = "", fg = "#ffb347" },
+	{ name = "*.ts", text = "", fg = "#5588cc" },
+	{ name = "*.py", text = "", fg = "#ffb347" },
+	{ name = "*.java", text = "", fg = "#ff6b8a" },
+	{ name = "*.c", text = "", fg = "#5588cc" },
+	{ name = "*.cpp", text = "", fg = "#5588cc" },
+	{ name = "*.h", text = "", fg = "#87ceeb" },
+	{ name = "*.hpp", text = "", fg = "#87ceeb" },
+
+	# Web
+	{ name = "*.html", text = "", fg = "#ff6b8a" },
+	{ name = "*.css", text = "", fg = "#5588cc" },
+	{ name = "*.scss", text = "", fg = "#87ceeb" },
+	{ name = "*.sass", text = "", fg = "#87ceeb" },
+	{ name = "*.json", text = "", fg = "#ffb347" },
+	{ name = "*.xml", text = "", fg = "#99FFE4" },
+	{ name = "*.yaml", text = "", fg = "#ff6b8a" },
+	{ name = "*.yml", text = "", fg = "#ff6b8a" },
+	{ name = "*.toml", text = "", fg = "#87ceeb" },
+
+	# Documents
+	{ name = "*.md", text = "", fg = "#e8f4f8" },
+	{ name = "*.txt", text = "", fg = "#e8f4f8" },
+	{ name = "*.pdf", text = "", fg = "#ff6b8a" },
+	{ name = "*.doc", text = "", fg = "#5588cc" },
+	{ name = "*.docx", text = "", fg = "#5588cc" },
+
+	# Archives
+	{ name = "*.zip", text = "", fg = "#ff6b8a" },
+	{ name = "*.tar", text = "", fg = "#ff6b8a" },
+	{ name = "*.gz", text = "", fg = "#ff6b8a" },
+	{ name = "*.7z", text = "", fg = "#ff6b8a" },
+	{ name = "*.rar", text = "", fg = "#ff6b8a" },
+
+	# Images
+	{ name = "*.png", text = "", fg = "#87ceeb" },
+	{ name = "*.jpg", text = "", fg = "#87ceeb" },
+	{ name = "*.jpeg", text = "", fg = "#87ceeb" },
+	{ name = "*.gif", text = "", fg = "#87ceeb" },
+	{ name = "*.svg", text = "", fg = "#87ceeb" },
+	{ name = "*.webp", text = "", fg = "#87ceeb" },
+
+	# Videos
+	{ name = "*.mp4", text = "", fg = "#ffb347" },
+	{ name = "*.avi", text = "", fg = "#ffb347" },
+	{ name = "*.mkv", text = "", fg = "#ffb347" },
+	{ name = "*.mov", text = "", fg = "#ffb347" },
+	{ name = "*.webm", text = "", fg = "#ffb347" },
+
+	# Audio
+	{ name = "*.mp3", text = "", fg = "#ffb347" },
+	{ name = "*.wav", text = "", fg = "#ffb347" },
+	{ name = "*.flac", text = "", fg = "#ffb347" },
+	{ name = "*.ogg", text = "", fg = "#ffb347" },
+
+	# Config files
+	{ name = ".gitignore", text = "", fg = "#708090" },
+	{ name = ".gitconfig", text = "", fg = "#ff6b8a" },
+	{ name = "Dockerfile", text = "", fg = "#5588cc" },
+	{ name = "Makefile", text = "", fg = "#99FFE4" },
+	{ name = "package.json", text = "", fg = "#99FFE4" },
+	{ name = "Cargo.toml", text = "", fg = "#ff6b8a" },
+
+	# Directories
+	{ name = "*/", text = "", fg = "#5588cc" },
+
+	# Default
+	{ name = "*", text = "", fg = "#e8f4f8" },
+]
