@@ -1,0 +1,162 @@
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# -- Bleu Color Palette Reference --
+# bg        = "#050a14" (Darker deep navy from wallpaper)
+# fgAlt     = "#e8f4f8" (Light blue-white for main text)
+# primary   = "#6bb6d6" (Cyan blue for highlights/inactive)
+# border    = "#2d4a6b" (Ocean blue for borders/secondary)
+# card      = "#1a2332" (Dark blue for cards/hover)
+# focus     = "#5588cc" (Pure blue for focus/active states)
+# error     = "#ff6b8a" (Soft red for errors)
+# warn      = "#ffb347" (Warm orange for warnings)
+# accent    = "#4a7ba7" (Sky blue for accents)
+# info      = "#87ceeb" (Light sky blue for info)
+# hint      = "#5a7a95" (Muted blue for hints)
+# -----------------------------------
+
+[package]
+disabled = false
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol$version]($style) "
+
+[username]
+show_always = true
+style_user = "fg:#87ceeb" # Light sky blue for user
+style_root = "fg:#ff6b8a" # Soft red for root
+format = "[$user]($style)@"
+
+[hostname]
+ssh_only = false
+style = "fg:#e8f4f8" # Light blue-white
+format = "[$hostname]($style) "
+disabled = false
+
+[directory]
+style = "fg:#e8f4f8" # Light blue-white
+format = "in [$path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncation_symbol = "../"
+read_only_style = "fg:#ff6b8a" # Soft red for read-only
+read_only = " 🔒"
+
+[git_branch]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "fg:#6bb6d6" # Cyan blue (Default style)
+format = '([\[$all_status$ahead_behind\]]($style)) '
+# Vesper color mappings for git states
+conflicted = "=${count}"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = '\$${count}'
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
+
+[cmd_duration]
+min_time = 1000
+style = "fg:#5a7a95" # Muted blue
+format = "took [$duration]($style) "
+disabled = false
+
+[time]
+disabled = true
+time_format = "%T"
+style = "fg:#5a7a95" # Muted blue
+format = "at [$time]($style) "
+utc_time_offset = "local"
+
+# --- Language Modules ---
+[nodejs]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)]($style) "
+
+[python]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)($virtualenv)]($style) "
+
+[rust]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)]($style) "
+
+[golang]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)]($style) "
+
+[php]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)]($style) "
+
+[java]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)]($style) "
+
+# This module is likely causing the "🌙 v5.4.7" output
+[lua]
+symbol = " " # Replaced moon with Nerd Font Lua icon
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol($version)]($style) "
+disabled = false # Make sure it's enabled if you want to see it
+
+# --- Environment & Tool Modules ---
+[conda]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol$environment]($style) "
+ignore_base = false
+
+[aws]
+symbol = " "
+style = "fg:#e8f4f8" # Light blue-white
+format = 'on [$symbol($profile \($region\))]($style) '
+
+[docker_context]
+symbol = " "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol$context]($style) "
+disabled = false
+
+[terraform]
+symbol = "󱁢 "
+style = "fg:#6bb6d6" # Cyan blue
+format = "via [$symbol$workspace]($style) "
+
+[kubernetes]
+symbol = "☸ "
+style = "fg:#e8f4f8" # Light blue-white
+format = 'on [$symbol$context (\($namespace\))]($style) '
+disabled = true
+
+# --- System Info Modules ---
+[memory_usage]
+symbol = "󰍛 "
+style = "fg:#5a7a95" # Muted blue
+threshold = 75
+format = "$symbol[${ram}( | ${swap})]($style) "
+disabled = false
+
+# --- Prompt Character ---
+[character]
+success_symbol = '[❯](fg:#6bb6d6)' # Cyan for success
+error_symbol = '[✗](fg:#ff6b8a)'   # Soft red for error
+vimcmd_symbol = '[❮](bold fg:#6bb6d6)' # Cyan for vim command
+vimcmd_replace_one_symbol = '[❮](bold fg:#87ceeb)' # Light sky blue
+vimcmd_replace_symbol = '[❮](bold fg:#87ceeb)'     # Light sky blue
+vimcmd_visual_symbol = '[❮](bold fg:#ffb347)'    # Warm orange for visual
