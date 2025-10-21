@@ -1,0 +1,104 @@
+# Bleu theme for btop
+# Based on VSCode Bleu theme with full blue palette nuances
+
+# Main background
+theme[main_bg]="#050a14"
+
+# Main text color
+theme[main_fg]="#e8f4f8"
+
+# Title color
+theme[title]="#00d4ff"
+
+# Highlight color
+theme[hi_fg]="#00d4ff"
+
+# Selected background
+theme[selected_bg]="#00d4ff"
+theme[selected_fg]="#050a14"
+
+# Inactive/dimmed text
+theme[inactive_fg]="#5a7a95"
+
+# Graph colors for CPU usage
+theme[cpu_box]="#00d4ff"
+theme[mem_box]="#5588cc"
+theme[net_box]="#87ceeb"
+theme[proc_box]="#4a7ba7"
+
+# Graph fill colors - CPU
+theme[cpu_start]="#87ceeb"
+theme[cpu_mid]="#6bb6d6"
+theme[cpu_end]="#5588cc"
+
+# Memory colors
+theme[mem_start]="#4a7ba7"
+theme[mem_mid]="#5588cc"
+theme[mem_end]="#6bb6d6"
+
+# Network colors
+theme[net_start]="#87ceeb"
+theme[net_mid]="#6bb6d6"
+theme[net_end]="#5588cc"
+
+# Process list colors
+theme[proc_start]="#5a7a95"
+theme[proc_mid]="#708090"
+theme[proc_end]="#e8f4f8"
+
+# Graph gradient colors
+theme[graph_text]="#e8f4f8"
+
+# Temperature colors
+theme[temp_start]="#87ceeb"
+theme[temp_mid]="#6bb6d6"
+theme[temp_end]="#4a7ba7"
+
+# Used/available colors
+theme[used_start]="#4a7ba7"
+theme[used_mid]="#5588cc"
+theme[used_end]="#6bb6d6"
+
+theme[available_start]="#2d4a6b"
+theme[available_mid]="#5a7a95"
+theme[available_end]="#708090"
+
+# Cache colors
+theme[cached_start]="#2d4a6b"
+theme[cached_mid]="#4a7ba7"
+theme[cached_end]="#87ceeb"
+
+# Free colors
+theme[free_start]="#070c16"
+theme[free_mid]="#2d4a6b"
+theme[free_end]="#5a7a95"
+
+# Process colors
+theme[process_start]="#87ceeb"
+theme[process_mid]="#6bb6d6"
+theme[process_end]="#4a7ba7"
+
+# Border colors
+theme[div_line]="#2d4a6b"
+
+# Background color of percentage meters
+theme[meter_bg]="#070c16"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#00d4ff"
+
+# Download graph colors
+theme[download_start]="#87ceeb"
+theme[download_mid]="#6bb6d6"
+theme[download_end]="#5588cc"
+
+# Upload graph colors
+theme[upload_start]="#5588cc"
+theme[upload_mid]="#4a7ba7"
+theme[upload_end]="#2d4a6b"
+
+# Status colors for different states
+theme[status_good]="#00d4ff"
+theme[status_warn]="#5588cc"
+theme[status_error]="#4a7ba7"
+theme[status_inactive]="#5a7a95"
