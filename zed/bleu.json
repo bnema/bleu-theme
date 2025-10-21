@@ -1,0 +1,89 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Bleu Theme Family",
+  "author": "bnema",
+  "themes": [
+    {
+      "name": "Bleu",
+      "appearance": "dark",
+      "style": {
+        "background": "#050a14",
+        "foreground": "#e8f4f8",
+        "accent": "#5588cc"
+      },
+      "syntax": {
+        "keyword": "#00d4ff",
+        "string": "#87ceeb",
+        "comment": "#708090",
+        "comment.doc": "#708090",
+        "number": "#4a7ba7",
+        "boolean": "#4a7ba7",
+        "operator": "#5588cc",
+        "function": "#fefefe",
+        "type": "#5588cc",
+        "variable": "#e8f4f8",
+        "property": "#e8f4f8",
+        "attribute": "#5588cc",
+        "tag": "#00d4ff",
+        "constant": "#4a7ba7",
+        "punctuation": "#e8f4f8",
+        "bracket": "#00d4ff",
+        "delimiter": "#5588cc"
+      },
+      "ui_colors": {
+        "border": {
+          "normal": "#070c16",
+          "focused": "#5588cc",
+          "selected": "#00d4ff"
+        },
+        "text": {
+          "normal": "#e8f4f8",
+          "muted": "#708090",
+          "accent": "#00d4ff"
+        },
+        "element": {
+          "background": "#0a1018",
+          "hover": "#2d4a6b80",
+          "active": "#5588cc",
+          "selected": "#2d4a6b"
+        }
+      },
+      "editor_colors": {
+        "editor.background": "#050a14",
+        "editor.foreground": "#e8f4f8",
+        "editor.gutter": "#050a14",
+        "editor.line_number": "#2d4a6b",
+        "editor.active_line_background": "#0a1018",
+        "editor.selection_background": "#2d4a6b",
+        "editor.selection_foreground": "#e8f4f8",
+        "editor.find_match_background": "#2d4a6b",
+        "editor.find_match_border": "#5588cc",
+        "editor.cursor": "#5588cc",
+        "editor.word_highlight_background": "#2d4a6b80",
+        "editor.bracket_match_background": "#2d4a6b80",
+        "editor.bracket_match_border": "#5588cc",
+        "editor.indent_guide": "#2d4a6b",
+        "editor.indent_guide_active": "#5588cc",
+        "editor.ruler": "#2d4a6b"
+      },
+      "terminal_colors": {
+        "black": "#050a14",
+        "red": "#ff6b8a",
+        "green": "#00d4ff",
+        "yellow": "#ffb347",
+        "blue": "#5588cc",
+        "magenta": "#87ceeb",
+        "cyan": "#00d4ff",
+        "white": "#e8f4f8",
+        "bright_black": "#2d4a6b",
+        "bright_red": "#ff6b8a",
+        "bright_green": "#00d4ff",
+        "bright_yellow": "#ffb347",
+        "bright_blue": "#5588cc",
+        "bright_magenta": "#87ceeb",
+        "bright_cyan": "#00d4ff",
+        "bright_white": "#fefefe"
+      }
+    }
+  ]
+}
