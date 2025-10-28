@@ -2,169 +2,169 @@ themes {
     bleu {
         // Text components - for general UI text elements
         text_unselected {
-            base 232 244 248        // #e8f4f8 - Light blue-white
-            background 5 10 20      // #050a14 - Darker deep navy
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 224 236 244        // #e0ecf4 - Primary Text
+            background 5 10 20      // #050a14 - Deep Navy background
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange (warnings)
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan (info)
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue (special)
         }
-        
+
         text_selected {
-            base 254 254 254        // #fefefe - Pure white
-            background 26 35 50     // #1a2332 - Dark blue
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 254 254 254        // #fefefe - Pure White (emphasis)
+            background 45 74 107    // #2d4a6b - Ocean Blue (selection)
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         // Ribbon components - for tabs and status bars
         ribbon_unselected {
-            base 112 128 144        // #708090 - Inactive tab text
-            background 5 10 20      // #050a14 - Same as editor bg
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 112 128 144        // #708090 - Dimmed Text (inactive tabs)
+            background 7 12 22      // #070c16 - Dark Blue (inactive tab bg)
+            emphasis_0 161 103 165  // #A167A5 - Soft Purple (errors)
+            emphasis_1 224 236 244  // #e0ecf4 - Primary Text
+            emphasis_2 85 136 204   // #5588cc - Pure Blue
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         ribbon_selected {
-            base 232 244 248        // #e8f4f8 - Active tab text
-            background 15 21 32     // #0f1520 - Active tab bg
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 224 236 244        // #e0ecf4 - Primary Text
+            background 15 21 32     // #0f1520 - Active Tab Blue
+            emphasis_0 161 103 165  // #A167A5 - Soft Purple
+            emphasis_1 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_2 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_3 85 136 204   // #5588cc - Pure Blue
         }
-        
+
         // Table components - for session manager and other table views
         table_title {
-            base 254 254 254        // #fefefe - Pure white
-            background 45 123 167   // #2d4a6b - Ocean blue
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 0 212 255          // #00d4ff - Bright Cyan (headers)
+            background 5 10 20      // #050a14 - Deep Navy
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         table_cell_unselected {
-            base 204 204 204        // #CCCCCC - fg
-            background 26 35 50     // #1a2332 - Dark blue
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 224 236 244        // #e0ecf4 - Primary Text
+            background 5 10 20      // #050a14 - Deep Navy
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         table_cell_selected {
-            base 254 254 254        // #fefefe - Pure white
-            background 74 123 167   // #4a7ba7 - Sky blue
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 254 254 254        // #fefefe - Pure White (emphasis)
+            background 45 74 107    // #2d4a6b - Ocean Blue (selection)
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         // List components - for file browsers and selection lists
         list_unselected {
-            base 232 244 248        // #e8f4f8 - Standard text
-            background 7 12 22      // #070c16 - Sidebar bg
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 224 236 244        // #e0ecf4 - Primary Text
+            background 5 10 20      // #050a14 - Deep Navy
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         list_selected {
-            base 254 254 254        // #fefefe - Pure white
-            background 85 136 204   // #5588cc - Active selection bg
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 85 136 204   // #5588cc - Pure blue
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 254 254 254        // #fefefe - Pure White (emphasis)
+            background 45 74 107    // #2d4a6b - Ocean Blue (selection)
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         // Frame components - for pane borders and dividers
         frame_unselected {
-            base 7 12 22            // #070c16 - Subtle inactive border
-            background 5 10 20      // #050a14 - Darker deep navy
-            emphasis_0 45 123 167   // #2d4a6b - Ocean blue
-            emphasis_1 45 123 167   // #2d4a6b - Ocean blue
-            emphasis_2 45 123 167   // #2d4a6b - Ocean blue
-            emphasis_3 45 123 167   // #2d4a6b - Ocean blue
+            base 26 35 50           // #1a2332 - Card Blue (unfocused borders, subtle but visible)
+            background 5 10 20      // #050a14 - Deep Navy background
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         frame_selected {
-            base 85 136 204         // #5588cc - Pure blue for active border
-            background 5 10 20      // #050a14 - Darker deep navy
-            emphasis_0 0 212 255    // #00d4ff - Bright cyan for focus
-            emphasis_1 153 255 228  // #99FFE4 - green
-            emphasis_2 153 255 228  // #99FFE4 - green
-            emphasis_3 153 255 228  // #99FFE4 - green
+            base 85 136 204         // #5588cc - Pure Blue (active pane border)
+            background 5 10 20      // #050a14 - Deep Navy background
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         frame_highlight {
-            base 0 212 255          // #00d4ff - Bright cyan for highlight
-            background 5 10 20      // #050a14 - Darker deep navy
-            emphasis_0 255 179 71   // #ffb347 - Warm orange
-            emphasis_1 255 179 71   // #ffb347 - Warm orange
-            emphasis_2 255 179 71   // #ffb347 - Warm orange
-            emphasis_3 255 179 71   // #ffb347 - Warm orange
+            base 45 74 107          // #2d4a6b - Ocean Blue (hover state border)
+            background 5 10 20      // #050a14 - Deep Navy background
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         // Exit code components - for command completion status
         exit_code_success {
-            base 153 255 228        // #99FFE4 - green
-            background 5 10 20      // #050a14 - Darker deep navy
-            emphasis_0 107 182 214  // #6bb6d6 - Cyan blue
-            emphasis_1 153 255 228  // #99FFE4 - green
-            emphasis_2 153 255 228  // #99FFE4 - green
-            emphasis_3 153 255 228  // #99FFE4 - green
+            base 153 255 228        // #99FFE4 - Success Green
+            background 5 10 20      // #050a14 - Deep Navy
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         exit_code_error {
-            base 255 128 128        // #FF8080 - red
-            background 5 10 20      // #050a14 - Darker deep navy
-            emphasis_0 255 128 128  // #FF8080 - red
-            emphasis_1 255 128 128  // #FF8080 - red
-            emphasis_2 255 128 128  // #FF8080 - red
-            emphasis_3 255 107 138  // #ff6b8a - Soft red
+            base 161 103 165        // #A167A5 - Soft Purple (errors)
+            background 5 10 20      // #050a14 - Deep Navy
+            emphasis_0 253 189 133  // #FDBD85 - Peach Orange
+            emphasis_1 0 212 255    // #00d4ff - Bright Cyan
+            emphasis_2 153 255 228  // #99FFE4 - Success Green
+            emphasis_3 135 206 235  // #87ceeb - Light Sky Blue
         }
-        
+
         // Multiplayer user colors - for collaborative sessions
         multiplayer_user_colors {
-            player_1 153 255 228    // #99FFE4 - green
-            player_2 255 207 168    // #FFCFA8 - orange
-            player_3 255 199 153    // #FFC799 - yellowDark
-            player_4 153 204 255    // #99CCFF - blue
-            player_5 204 153 255    // #CC99FF - light purple
-            player_6 255 128 128    // #FF8080 - red
-            player_7 101 115 126    // #65737E - gray
-            player_8 160 160 160    // #A0A0A0 - light gray
-            player_9 254 254 254    // #FEFEFE - white
-            player_10 127 127 127   // #7F7F7F - medium gray
+            player_1 0 212 255      // #00d4ff - Bright Cyan
+            player_2 85 136 204     // #5588cc - Pure Blue
+            player_3 153 255 228    // #99FFE4 - Success Green
+            player_4 253 189 133    // #FDBD85 - Peach Orange
+            player_5 135 206 235    // #87ceeb - Light Sky Blue
+            player_6 74 123 167     // #4a7ba7 - Sky Blue
+            player_7 161 103 165    // #A167A5 - Soft Purple
+            player_8 45 74 107      // #2d4a6b - Ocean Blue
+            player_9 254 254 254    // #fefefe - Pure White
+            player_10 224 236 244   // #e0ecf4 - Primary Text
         }
-        
+
         // Terminal colors (ANSI) - standard terminal color palette
-        black "#050a14"         // Darker deep navy
-        red "#ff6b8a"          // Soft red
-        green "#00d4ff"        // Bright cyan (VSCode uses for green)
-        yellow "#ffb347"       // Warm orange
-        blue "#5588cc"         // Pure blue
-        magenta "#87ceeb"      // Light sky blue
-        cyan "#00d4ff"         // Bright cyan
-        white "#e8f4f8"        // Light blue-white
-        orange "#ffb347"       // Warm orange
-        
-        // Bright terminal colors - bright variants
-        bright_black "#2d4a6b"   // Ocean blue
-        bright_red "#ff6b8a"     // Same soft red
-        bright_green "#00d4ff"   // Bright cyan
-        bright_yellow "#ffb347"  // Same orange
-        bright_blue "#5588cc"    // Same pure blue
-        bright_magenta "#87ceeb" // Same light sky blue
-        bright_cyan "#00d4ff"    // Bright cyan
-        bright_white "#fefefe"   // Pure white
+        black "#050a14"         // Deep Navy - Primary background
+        red "#A167A5"           // Soft Purple - Errors
+        green "#99FFE4"         // Success Green
+        yellow "#FDBD85"        // Peach Orange - Warnings
+        blue "#5588cc"          // Pure Blue
+        magenta "#87ceeb"       // Light Sky Blue
+        cyan "#00d4ff"          // Bright Cyan
+        white "#e0ecf4"         // Primary Text
+        orange "#FDBD85"        // Peach Orange
+
+        // Bright terminal colors
+        bright_black "#2d4a6b"   // Ocean Blue
+        bright_red "#A167A5"     // Soft Purple - Errors
+        bright_green "#99FFE4"   // Success Green
+        bright_yellow "#FDBD85"  // Peach Orange
+        bright_blue "#5588cc"    // Pure Blue
+        bright_magenta "#87ceeb" // Light Sky Blue
+        bright_cyan "#00d4ff"    // Bright Cyan
+        bright_white "#fefefe"   // Pure White - Emphasis
     }
 }
