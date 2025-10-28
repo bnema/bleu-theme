@@ -48,12 +48,12 @@ The Bleu design system is built on these fundamental principles:
 
 | Name | Hex | RGB | Usage | Weight |
 |------|-----|-----|-------|--------|
-| **Primary Text** | `#e8f4f8` | `232, 244, 248` | Main body text, active UI elements | Regular |
+| **Primary Text** | `#e0ecf4` | `224, 236, 244` | Main body text, active UI elements | Regular |
 | **Pure White** | `#fefefe` | `254, 254, 254` | Emphasized text, selected items, function names | Bold |
 | **Dimmed Text** | `#708090` | `112, 128, 144` | Comments, inactive tabs, secondary information | Regular/Italic |
 
 **Contrast Ratios:**
-- Primary Text on Deep Navy: ~14:1 (WCAG AAA)
+- Primary Text on Deep Navy: ~13:1 (WCAG AAA)
 - Pure White on Deep Navy: ~16:1 (WCAG AAA)
 - Dimmed Text on Deep Navy: ~5:1 (WCAG AA)
 
@@ -78,8 +78,8 @@ The Bleu design system is built on these fundamental principles:
 | Name | Hex | RGB | Usage | Semantic Meaning |
 |------|-----|-----|-------|------------------|
 | **Success Green** | `#99FFE4` | `153, 255, 228` | Git additions, success states, confirmations | Positive action |
-| **Soft Red** | `#ff6b8a` | `255, 107, 138` | Errors, deletions, destructive actions | Negative action |
-| **Warm Orange** | `#ffb347` | `255, 179, 71` | Warnings, modified states, attention needed | Caution |
+| **Soft Purple** | `#A167A5` | `161, 103, 165` | Errors, deletions, destructive actions | Negative action |
+| **Peach Orange** | `#FDBD85` | `253, 189, 133` | Warnings, modified states, attention needed | Caution |
 
 **Guidelines:**
 - Reserve semantic colors strictly for their meanings
@@ -113,7 +113,7 @@ Disabled: #708090 (Dimmed)
 #### Secondary Button
 ```
 Background: #2d4a6b (Ocean Blue)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 Hover: #4a7ba7 (Sky Blue)
 ```
 
@@ -129,7 +129,7 @@ Underline: On hover only
 #### Active Tab
 ```
 Background: #0f1520 (Active Tab Blue)
-Text: #e8f4f8 (Primary Text)
+Text: #e0ecf4 (Primary Text)
 Border Top: Optional #5588cc accent
 ```
 
@@ -151,7 +151,7 @@ Border: #070c16 (Dark Blue)
 #### Text Input
 ```
 Background: #0a1018 (Darker Blue)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 Border: #070c16 (Default)
 Border (Focus): #5588cc (Pure Blue)
 Placeholder: #708090 (Dimmed Text)
@@ -178,19 +178,19 @@ Foreground: #fefefe (Pure White)
 #### Inactive Selection
 ```
 Background: #2d4a6b (Ocean Blue)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 ```
 
 #### Hover State
 ```
 Background: #2d4a6b with 80 opacity (#2d4a6b80)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 ```
 
 #### Focus State
 ```
 Background: #5588cc with 80 opacity (#5588cc80)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 ```
 
 ### Panels & Containers
@@ -198,7 +198,7 @@ Foreground: #e8f4f8 (Primary Text)
 #### Sidebar/Navigation
 ```
 Background: #070c16 (Dark Blue)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 Border: #070c16
 Section Header Background: #0f1520
 ```
@@ -213,7 +213,7 @@ Shadow: #050a14 with 80 opacity
 #### Status Bar
 ```
 Background: #0a1018 (Darker Blue)
-Foreground: #e8f4f8 (Primary Text)
+Foreground: #e0ecf4 (Primary Text)
 Border: #070c16
 Debug State: #ff6b8a background with #fefefe text
 ```
@@ -247,7 +247,7 @@ Shape: Circle or rounded rectangle (4px radius)
 | Level | Color | Usage |
 |-------|-------|-------|
 | **H1 - Emphasis** | `#fefefe` (Pure White) | Function names, selected items, titles |
-| **H2 - Primary** | `#e8f4f8` (Primary Text) | Body text, labels, active elements |
+| **H2 - Primary** | `#e0ecf4` (Primary Text) | Body text, labels, active elements |
 | **H3 - Secondary** | `#708090` (Dimmed Text) | Comments, hints, inactive elements |
 | **H4 - Accent** | `#00d4ff` (Bright Cyan) | Links, keywords, interactive highlights |
 
@@ -297,16 +297,16 @@ Yellow:  #ffb347    Bright Yellow:  #ffb347
 Blue:    #5588cc    Bright Blue:    #5588cc
 Magenta: #87ceeb    Bright Magenta: #87ceeb
 Cyan:    #00d4ff    Bright Cyan:    #00d4ff
-White:   #e8f4f8    Bright White:   #fefefe
+White:   #e0ecf4    Bright White:   #fefefe
 ```
 
 **Cursor:**
 - Color: `#5588cc`
-- Text: `#e8f4f8`
+- Text: `#e0ecf4`
 
 **Selection:**
 - Background: `#2d4a6b`
-- Foreground: `#e8f4f8`
+- Foreground: `#e0ecf4`
 
 ### Code Editors (VSCode, Neovim, Zed)
 
@@ -320,7 +320,7 @@ Booleans:     #00d4ff
 Functions:    #fefefe (bold)
 Types/Classes: #5588cc
 Operators:    #5588cc
-Variables:    #e8f4f8
+Variables:    #e0ecf4
 Constants:    #4a7ba7
 ```
 
@@ -356,7 +356,7 @@ Executables:  #99FFE4
 Images:       #87ceeb
 Videos/Audio: #ffb347
 Archives:     #ff6b8a
-Documents:    #e8f4f8
+Documents:    #e0ecf4
 Code Files:   Varies by language
 ```
 
@@ -459,7 +459,7 @@ For applications supporting transparency:
 When implementing the Bleu design system:
 
 - [ ] Use `#050a14` as the primary background
-- [ ] Use `#e8f4f8` for main text (never pure white for body text)
+- [ ] Use `#e0ecf4` for main text (never pure white for body text)
 - [ ] Reserve `#fefefe` for emphasis and important elements
 - [ ] Use `#00d4ff` for primary interactive elements
 - [ ] Use `#5588cc` for secondary interactive elements

@@ -14,7 +14,7 @@ A sophisticated dark theme with a cool blue color palette for extended coding se
 - `#2d4a6b` Ocean Blue - Selections, hover states
 
 ### Text Colors
-- `#e8f4f8` Primary Text - Main body text (WCAG AAA - 14:1)
+- `#e0ecf4` Primary Text - Main body text (WCAG AAA - 13:1)
 - `#fefefe` Pure White - Emphasis, selected items (WCAG AAA - 16:1)
 - `#708090` Dimmed Text - Comments, inactive elements (WCAG AA - 5:1)
 
@@ -26,8 +26,8 @@ A sophisticated dark theme with a cool blue color palette for extended coding se
 
 ### Status Colors
 - `#99FFE4` Success Green - Git additions, success states
-- `#ff6b8a` Soft Red - Errors, deletions
-- `#ffb347` Warm Orange - Warnings, attention
+- `#A167A5` Soft Purple - Errors, deletions
+- `#FDBD85` Peach Orange - Warnings, attention
 
 ## Supported Apps
 
@@ -41,6 +41,7 @@ A sophisticated dark theme with a cool blue color palette for extended coding se
 - **Ghostty** - Add config from `ghostty/bleu` to your main config
 - **Kitty** - Add config from `kitty/bleu.conf` to your kitty.conf
 - **Starship** - `starship/bleu.toml` → `~/.config/starship/`
+- **Tmux** - Add `source-file` from `tmux/bleu.conf` to your `~/.tmux.conf`
 
 ### System & Tools
 - **Btop** - `btop/bleu.theme` → `~/.config/btop/themes/`
@@ -58,10 +59,10 @@ A sophisticated dark theme with a cool blue color palette for extended coding se
 ## Accessibility
 
 All text colors meet WCAG standards:
-- Primary Text: 17.67:1 (AAA)
-- Pure White: 19.64:1 (AAA)
-- Dimmed Text: 4.89:1 (AA)
-- Bright Cyan: 11.19:1 (AAA)
+- Primary Text: 13:1 (AAA)
+- Pure White: 16:1 (AAA)
+- Dimmed Text: 5:1 (AA)
+- Bright Cyan: 11:1 (AAA)
 
 ## License
 

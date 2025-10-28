@@ -1,162 +1,252 @@
+# Bleu Theme for Starship Prompt
+# A sophisticated dark theme with a cool blue color palette
+# Source: https://github.com/bnema/bleu-theme
+#
+# Installation:
+# Copy this file to ~/.config/starship.toml
+#
+# Color Palette:
+# - Directory: #5588cc (Pure Blue)
+# - Git Branch: #87ceeb (Light Sky Blue)
+# - Git Status: #00d4ff (Bright Cyan)
+# - Success: #00d4ff (Bright Cyan)
+# - Error: #6a8caf (Medium Blue)
+# - Success State: #99FFE4 (Success Green)
+# - Dimmed: #708090 (Dimmed Text)
 
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
-
-# Inserts a blank line between shell prompts
-add_newline = true
-
-# -- Bleu Color Palette Reference --
-# bg        = "#050a14" (Darker deep navy from wallpaper)
-# fgAlt     = "#e8f4f8" (Light blue-white for main text)
-# primary   = "#6bb6d6" (Cyan blue for highlights/inactive)
-# border    = "#2d4a6b" (Ocean blue for borders/secondary)
-# card      = "#1a2332" (Dark blue for cards/hover)
-# focus     = "#5588cc" (Pure blue for focus/active states)
-# error     = "#ff6b8a" (Soft red for errors)
-# warn      = "#ffb347" (Warm orange for warnings)
-# accent    = "#4a7ba7" (Sky blue for accents)
-# info      = "#87ceeb" (Light sky blue for info)
-# hint      = "#5a7a95" (Muted blue for hints)
-# -----------------------------------
-
-[package]
-disabled = false
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol$version]($style) "
-
-[username]
-show_always = true
-style_user = "fg:#87ceeb" # Light sky blue for user
-style_root = "fg:#ff6b8a" # Soft red for root
-format = "[$user]($style)@"
-
-[hostname]
-ssh_only = false
-style = "fg:#e8f4f8" # Light blue-white
-format = "[$hostname]($style) "
-disabled = false
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status \
+$cmd_duration\
+$nodejs\
+$python\
+$rust\
+$golang\
+$docker_context\
+$package\
+$line_break\
+$character"""
 
 [directory]
-style = "fg:#e8f4f8" # Light blue-white
-format = "in [$path]($style)[$read_only]($read_only_style) "
-truncation_length = 3
-truncation_symbol = "../"
-read_only_style = "fg:#ff6b8a" # Soft red for read-only
-read_only = " 🔒"
+style = "#5588cc"
+read_only = " 󰌾"
+
+[character]
+success_symbol = "[❯](#00d4ff)"
+error_symbol = "[❯](#6a8caf)"
+vimcmd_symbol = "[❮](#99FFE4)"
 
 [git_branch]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "on [$symbol$branch]($style) "
+format = "on [$branch]($style)"
+style = "#87ceeb"
+symbol = " "
 
 [git_status]
-style = "fg:#6bb6d6" # Cyan blue (Default style)
-format = '([\[$all_status$ahead_behind\]]($style)) '
-# Vesper color mappings for git states
-conflicted = "=${count}"
-ahead = "⇡${count}"
-behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = "?${count}"
-stashed = '\$${count}'
-modified = "!${count}"
-staged = "+${count}"
-renamed = "»${count}"
-deleted = "✘${count}"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](#87ceeb) ($ahead_behind$stashed)]($style)"
+style = "#00d4ff"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "#708090"
 
 [cmd_duration]
-min_time = 1000
-style = "fg:#5a7a95" # Muted blue
-format = "took [$duration]($style) "
-disabled = false
-
-[time]
-disabled = true
-time_format = "%T"
-style = "fg:#5a7a95" # Muted blue
-format = "at [$time]($style) "
-utc_time_offset = "local"
-
-# --- Language Modules ---
-[nodejs]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)]($style) "
+format = "[$duration]($style) "
+style = "#6bb6d6"
 
 [python]
+format = "[$virtualenv]($style) "
+style = "#708090"
 symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)($virtualenv)]($style) "
-
-[rust]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)]($style) "
-
-[golang]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)]($style) "
-
-[php]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)]($style) "
-
-[java]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)]($style) "
-
-# This module is likely causing the "🌙 v5.4.7" output
-[lua]
-symbol = " " # Replaced moon with Nerd Font Lua icon
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol($version)]($style) "
-disabled = false # Make sure it's enabled if you want to see it
-
-# --- Environment & Tool Modules ---
-[conda]
-symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol$environment]($style) "
-ignore_base = false
 
 [aws]
-symbol = " "
-style = "fg:#e8f4f8" # Light blue-white
-format = 'on [$symbol($profile \($region\))]($style) '
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[bun]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
 
 [docker_context]
 symbol = " "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol$context]($style) "
-disabled = false
 
-[terraform]
-symbol = "󱁢 "
-style = "fg:#6bb6d6" # Cyan blue
-format = "via [$symbol$workspace]($style) "
+[elixir]
+symbol = " "
 
-[kubernetes]
-symbol = "☸ "
-style = "fg:#e8f4f8" # Light blue-white
-format = 'on [$symbol$context (\($namespace\))]($style) '
-disabled = true
+[elm]
+symbol = " "
 
-# --- System Info Modules ---
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = "  "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
 [memory_usage]
 symbol = "󰍛 "
-style = "fg:#5a7a95" # Muted blue
-threshold = 75
-format = "$symbol[${ram}( | ${swap})]($style) "
-disabled = false
 
-# --- Prompt Character ---
-[character]
-success_symbol = '[❯](fg:#6bb6d6)' # Cyan for success
-error_symbol = '[✗](fg:#ff6b8a)'   # Soft red for error
-vimcmd_symbol = '[❮](bold fg:#6bb6d6)' # Cyan for vim command
-vimcmd_replace_one_symbol = '[❮](bold fg:#87ceeb)' # Light sky blue
-vimcmd_replace_symbol = '[❮](bold fg:#87ceeb)'     # Light sky blue
-vimcmd_visual_symbol = '[❮](bold fg:#ffb347)'    # Warm orange for visual
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
+
+[gradle]
+symbol = " "

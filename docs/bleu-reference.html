@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bleu Theme - Design System Reference</title>
     <style>
+        :root {
+            /* Background Colors */
+            --bg-deep-navy: #050a14;
+            --bg-dark-blue: #070c16;
+            --bg-darker-blue: #0a1018;
+            --bg-active-tab: #0f1520;
+            --bg-ocean-blue: #2d4a6b;
+
+            /* Text Colors */
+            --text-primary: #e0ecf4;
+            --text-white: #fefefe;
+            --text-dimmed: #708090;
+
+            /* Accent Colors */
+            --accent-cyan: #00d4ff;
+            --accent-blue: #5588cc;
+            --accent-sky: #87ceeb;
+            --accent-sky-blue: #4a7ba7;
+
+            /* Status Colors */
+            --status-success: #99FFE4;
+            --status-error: #A167A5;
+            --status-warning: #FDBD85;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,8 +38,8 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #050a14;
-            color: #e8f4f8;
+            background: var(--bg-deep-navy);
+            color: var(--text-primary);
             line-height: 1.6;
             padding: 2rem;
         }
@@ -27,31 +52,31 @@
         header {
             text-align: center;
             padding: 3rem 0;
-            border-bottom: 2px solid #070c16;
+            border-bottom: 2px solid var(--bg-dark-blue);
             margin-bottom: 3rem;
         }
 
         h1 {
-            color: #fefefe;
+            color: var(--text-white);
             font-size: 3rem;
             margin-bottom: 0.5rem;
         }
 
         .subtitle {
-            color: #708090;
+            color: var(--text-dimmed);
             font-size: 1.2rem;
         }
 
         h2 {
-            color: #00d4ff;
+            color: var(--accent-cyan);
             font-size: 2rem;
             margin: 3rem 0 1.5rem;
-            border-bottom: 2px solid #2d4a6b;
+            border-bottom: 2px solid var(--bg-ocean-blue);
             padding-bottom: 0.5rem;
         }
 
         h3 {
-            color: #5588cc;
+            color: var(--accent-blue);
             font-size: 1.5rem;
             margin: 2rem 0 1rem;
         }
@@ -69,8 +94,8 @@
         }
 
         .color-card {
-            background: #0a1018;
-            border: 1px solid #070c16;
+            background: var(--bg-darker-blue);
+            border: 1px solid var(--bg-dark-blue);
             border-radius: 8px;
             overflow: hidden;
             transition: transform 150ms ease, border-color 150ms ease;
@@ -78,7 +103,7 @@
 
         .color-card:hover {
             transform: translateY(-4px);
-            border-color: #5588cc;
+            border-color: var(--accent-blue);
         }
 
         .color-swatch {
@@ -96,27 +121,27 @@
         }
 
         .color-name {
-            color: #fefefe;
+            color: var(--text-white);
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
 
         .color-hex {
-            color: #00d4ff;
+            color: var(--accent-cyan);
             font-family: 'Courier New', monospace;
             font-size: 0.95rem;
             margin-bottom: 0.25rem;
         }
 
         .color-rgb {
-            color: #708090;
+            color: var(--text-dimmed);
             font-family: 'Courier New', monospace;
             font-size: 0.85rem;
             margin-bottom: 0.5rem;
         }
 
         .color-usage {
-            color: #87ceeb;
+            color: var(--accent-sky);
             font-size: 0.9rem;
             font-style: italic;
         }
@@ -130,14 +155,14 @@
         }
 
         .component-example {
-            background: #0a1018;
-            border: 1px solid #070c16;
+            background: var(--bg-darker-blue);
+            border: 1px solid var(--bg-dark-blue);
             border-radius: 8px;
             padding: 2rem;
         }
 
         .component-title {
-            color: #00d4ff;
+            color: var(--accent-cyan);
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
             font-weight: bold;
@@ -156,36 +181,36 @@
         }
 
         .btn-primary {
-            background: #5588cc;
-            color: #fefefe;
+            background: var(--accent-blue);
+            color: var(--text-white);
         }
 
         .btn-primary:hover {
-            background: #00d4ff;
+            background: var(--accent-cyan);
         }
 
         .btn-secondary {
-            background: #2d4a6b;
-            color: #e8f4f8;
+            background: var(--bg-ocean-blue);
+            color: var(--text-primary);
         }
 
         .btn-secondary:hover {
-            background: #4a7ba7;
+            background: var(--accent-sky-blue);
         }
 
         .btn-link {
             background: transparent;
-            color: #00d4ff;
+            color: var(--accent-cyan);
             text-decoration: underline;
         }
 
         .btn-link:hover {
-            color: #5588cc;
+            color: var(--accent-blue);
         }
 
         .btn-disabled {
-            background: #708090;
-            color: #2d4a6b;
+            background: var(--text-dimmed);
+            color: var(--bg-ocean-blue);
             cursor: not-allowed;
             opacity: 0.5;
         }
@@ -198,49 +223,49 @@
         .input-label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #e8f4f8;
+            color: var(--text-primary);
         }
 
         .input-field {
             width: 100%;
             padding: 0.75rem;
-            background: #0a1018;
-            border: 2px solid #070c16;
+            background: var(--bg-darker-blue);
+            border: 2px solid var(--bg-dark-blue);
             border-radius: 6px;
-            color: #e8f4f8;
+            color: var(--text-primary);
             font-size: 1rem;
             transition: border-color 150ms ease;
         }
 
         .input-field:focus {
             outline: none;
-            border-color: #5588cc;
+            border-color: var(--accent-blue);
         }
 
         .input-field::placeholder {
-            color: #708090;
+            color: var(--text-dimmed);
         }
 
         .input-error {
-            border-color: #ff6b8a;
-            background: rgba(255, 107, 138, 0.1);
+            border-color: var(--status-error);
+            background: rgba(155, 141, 255, 0.1);
         }
 
         .input-success {
-            border-color: #99FFE4;
+            border-color: var(--status-success);
         }
 
         /* Tabs */
         .tabs {
             display: flex;
-            border-bottom: 2px solid #070c16;
+            border-bottom: 2px solid var(--bg-dark-blue);
             margin-bottom: 1rem;
         }
 
         .tab {
             padding: 0.75rem 1.5rem;
-            background: #050a14;
-            color: #708090;
+            background: var(--bg-deep-navy);
+            color: var(--text-dimmed);
             border: none;
             cursor: pointer;
             transition: all 150ms ease;
@@ -249,13 +274,13 @@
         }
 
         .tab:hover {
-            background: #0a1018;
+            background: var(--bg-darker-blue);
         }
 
         .tab.active {
-            background: #0f1520;
-            color: #e8f4f8;
-            border-top: 2px solid #5588cc;
+            background: var(--bg-active-tab);
+            color: var(--text-primary);
+            border-top: 2px solid var(--accent-blue);
         }
 
         /* Lists and Selections */
@@ -272,8 +297,8 @@
         }
 
         .list-item.selected {
-            background: #5588cc;
-            color: #fefefe;
+            background: var(--accent-blue);
+            color: var(--text-white);
         }
 
         /* Badges */
@@ -287,57 +312,64 @@
         }
 
         .badge-primary {
-            background: #5588cc;
-            color: #fefefe;
+            background: var(--accent-blue);
+            color: var(--text-white);
         }
 
         .badge-success {
-            background: #99FFE4;
-            color: #050a14;
+            background: var(--status-success);
+            color: var(--bg-deep-navy);
         }
 
         .badge-error {
-            background: #ff6b8a;
-            color: #fefefe;
+            background: var(--status-error);
+            color: var(--text-white);
         }
 
         .badge-warning {
-            background: #ffb347;
-            color: #050a14;
+            background: var(--status-warning);
+            color: var(--bg-deep-navy);
         }
 
         /* Code Block */
         .code-example {
-            background: #050a14;
-            border: 1px solid #070c16;
+            background: var(--bg-deep-navy);
+            border: 1px solid var(--bg-dark-blue);
             border-radius: 8px;
             padding: 1.5rem;
             margin: 2rem 0;
             overflow-x: auto;
+            color: var(--text-primary);
+        }
+
+        .code-example pre {
+            margin: 0;
+            color: var(--text-primary);
         }
 
         .code-example code {
             font-family: 'Courier New', monospace;
             font-size: 0.95rem;
             line-height: 1.8;
+            color: var(--text-primary);
         }
 
-        .code-comment { color: #708090; font-style: italic; }
-        .code-keyword { color: #00d4ff; font-style: italic; }
-        .code-string { color: #87ceeb; }
-        .code-number { color: #4a7ba7; }
-        .code-function { color: #fefefe; font-weight: bold; }
-        .code-type { color: #5588cc; }
-        .code-operator { color: #5588cc; }
+        .code-comment { color: var(--text-dimmed); font-style: italic; }
+        .code-keyword { color: var(--accent-cyan); font-style: italic; }
+        .code-string { color: var(--accent-sky); }
+        .code-number { color: var(--accent-sky-blue); }
+        .code-function { color: var(--text-white); font-weight: bold; }
+        .code-type { color: var(--accent-blue); }
+        .code-operator { color: var(--accent-blue); }
 
         /* Status Bar */
         .status-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #0a1018;
+            background: var(--bg-darker-blue);
             padding: 0.75rem 1rem;
-            border-top: 1px solid #070c16;
+            border-top: 1px solid var(--bg-dark-blue);
             border-radius: 6px;
         }
 
@@ -353,9 +385,9 @@
             border-radius: 50%;
         }
 
-        .status-success { background: #99FFE4; }
-        .status-error { background: #ff6b8a; }
-        .status-warning { background: #ffb347; }
+        .status-success { background: var(--status-success); }
+        .status-error { background: var(--status-error); }
+        .status-warning { background: var(--status-warning); }
 
         /* Git Indicators */
         .git-indicators {
@@ -369,14 +401,14 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
-            background: #0a1018;
+            background: var(--bg-darker-blue);
             border-radius: 6px;
         }
 
-        .git-added { color: #99FFE4; }
-        .git-modified { color: #00d4ff; }
-        .git-deleted { color: #ff6b8a; }
-        .git-ignored { color: #708090; }
+        .git-added { color: var(--status-success); }
+        .git-modified { color: var(--accent-cyan); }
+        .git-deleted { color: var(--status-error); }
+        .git-ignored { color: var(--text-dimmed); }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -466,13 +498,13 @@
             <h2>Text & Foreground Colors</h2>
             <div class="color-grid">
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #e8f4f8; color: #050a14;">
+                    <div class="color-swatch" style="background: #e0ecf4; color: #050a14;">
                         Primary Text
                     </div>
                     <div class="color-info">
                         <div class="color-name">Primary Text</div>
-                        <div class="color-hex">#e8f4f8</div>
-                        <div class="color-rgb">RGB(232, 244, 248)</div>
+                        <div class="color-hex">#e0ecf4</div>
+                        <div class="color-rgb">RGB(224, 236, 244)</div>
                         <div class="color-usage">Main body text, active UI elements (WCAG AAA)</div>
                     </div>
                 </div>
@@ -574,25 +606,25 @@
                 </div>
 
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #ff6b8a; color: #fefefe;">
-                        Soft Red
+                    <div class="color-swatch" style="background: #A167A5; color: #fefefe;">
+                        Soft Purple
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Soft Red</div>
-                        <div class="color-hex">#ff6b8a</div>
-                        <div class="color-rgb">RGB(255, 107, 138)</div>
+                        <div class="color-name">Soft Purple</div>
+                        <div class="color-hex">#A167A5</div>
+                        <div class="color-rgb">RGB(161, 103, 165)</div>
                         <div class="color-usage">Errors, deletions, destructive actions</div>
                     </div>
                 </div>
 
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #ffb347; color: #050a14;">
-                        Warm Orange
+                    <div class="color-swatch" style="background: #FDBD85; color: #050a14;">
+                        Peach Orange
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Warm Orange</div>
-                        <div class="color-hex">#ffb347</div>
-                        <div class="color-rgb">RGB(255, 179, 71)</div>
+                        <div class="color-name">Peach Orange</div>
+                        <div class="color-hex">#FDBD85</div>
+                        <div class="color-rgb">RGB(253, 189, 133)</div>
                         <div class="color-usage">Warnings, modified states, attention</div>
                     </div>
                 </div>
@@ -706,8 +738,7 @@
         <section class="section">
             <h2>Syntax Highlighting Example</h2>
             <div class="code-example">
-                <code>
-<span class="code-comment">// Example TypeScript code with Bleu theme syntax highlighting</span>
+                <pre><code><span class="code-comment">// Example TypeScript code with Bleu theme syntax highlighting</span>
 <span class="code-keyword">import</span> { <span class="code-type">Component</span> } <span class="code-keyword">from</span> <span class="code-string">'react'</span>;
 
 <span class="code-keyword">interface</span> <span class="code-type">UserProps</span> {
@@ -730,8 +761,7 @@
   isActive: <span class="code-keyword">true</span>
 };
 
-<span class="code-function">console</span>.<span class="code-function">log</span>(<span class="code-function">greetUser</span>(user));
-                </code>
+<span class="code-function">console</span>.<span class="code-function">log</span>(<span class="code-function">greetUser</span>(user));</code></pre>
             </div>
         </section>
 
@@ -742,22 +772,22 @@
                 <h3>WCAG Compliance</h3>
                 <p style="margin: 1rem 0;">All text colors meet WCAG accessibility standards:</p>
                 <ul style="margin-left: 2rem; line-height: 2;">
-                    <li><span style="color: #e8f4f8;">Primary Text (#e8f4f8)</span> on Deep Navy: <strong style="color: #99FFE4;">~14:1</strong> (AAA)</li>
-                    <li><span style="color: #fefefe;">Pure White (#fefefe)</span> on Deep Navy: <strong style="color: #99FFE4;">~16:1</strong> (AAA)</li>
-                    <li><span style="color: #708090;">Dimmed Text (#708090)</span> on Deep Navy: <strong style="color: #99FFE4;">~5:1</strong> (AA)</li>
-                    <li><span style="color: #00d4ff;">Bright Cyan (#00d4ff)</span> on Deep Navy: <strong style="color: #99FFE4;">~11:1</strong> (AAA)</li>
+                    <li><span style="color: var(--text-primary);">Primary Text (#e0ecf4)</span> on Deep Navy: <strong style="color: var(--status-success);">~13:1</strong> (AAA)</li>
+                    <li><span style="color: var(--text-white);">Pure White (#fefefe)</span> on Deep Navy: <strong style="color: var(--status-success);">~16:1</strong> (AAA)</li>
+                    <li><span style="color: var(--text-dimmed);">Dimmed Text (#708090)</span> on Deep Navy: <strong style="color: var(--status-success);">~5:1</strong> (AA)</li>
+                    <li><span style="color: var(--accent-cyan);">Bright Cyan (#00d4ff)</span> on Deep Navy: <strong style="color: var(--status-success);">~11:1</strong> (AAA)</li>
                 </ul>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #070c16; text-align: center;">
-            <p style="color: #708090;">Bleu Theme Design System Reference v1.0</p>
-            <p style="color: #708090; margin-top: 0.5rem;">Created by <span style="color: #00d4ff;">bnema</span> • 2025</p>
-            <p style="color: #708090; margin-top: 0.5rem; font-size: 0.9rem;">
+        <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--bg-dark-blue); text-align: center;">
+            <p style="color: var(--text-dimmed);">Bleu Theme Design System Reference v1.0</p>
+            <p style="color: var(--text-dimmed); margin-top: 0.5rem;">Created by <span style="color: var(--accent-cyan);">bnema</span> • 2025</p>
+            <p style="color: var(--text-dimmed); margin-top: 0.5rem; font-size: 0.9rem;">
                 For more details, see
-                <span style="color: #87ceeb;">bleu-design-system.md</span> and
-                <span style="color: #87ceeb;">bleu-color-reference.md</span>
+                <span style="color: var(--accent-sky);">bleu-design-system.md</span> and
+                <span style="color: var(--accent-sky);">bleu-color-reference.md</span>
             </p>
         </footer>
     </div>
