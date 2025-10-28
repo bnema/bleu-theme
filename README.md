@@ -37,7 +37,9 @@ A sophisticated dark theme with a cool blue color palette for extended coding se
 - **Zed** - `zed/bleu.json` → `~/.config/zed/themes/`
 
 ### Terminal & Shell
+- **Bat** - `bat/bleu.tmTheme` → `$(bat --config-dir)/themes/` then run `bat cache --build`
 - **Eza** - `eza/theme.yml` → `~/.config/eza/`
+- **Fzf** - Source `fzf/bleu.sh` (bash), `fzf/bleu.zsh` (zsh), or `fzf/bleu.fish` (fish) in your shell config
 - **Ghostty** - Add config from `ghostty/bleu` to your main config
 - **Kitty** - Add config from `kitty/bleu.conf` to your kitty.conf
 - **Starship** - `starship/bleu.toml` → `~/.config/starship/`
