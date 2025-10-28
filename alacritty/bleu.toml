@@ -1,0 +1,86 @@
+# Bleu Theme for Alacritty
+# A sophisticated dark theme with a cool blue spectrum
+# Based on the Bleu Design System v1.0
+
+[colors.primary]
+background = "#050a14" # Deep Navy - Primary background
+foreground = "#e0ecf4" # Primary Text
+dim_foreground = "#708090" # Dimmed Text
+bright_foreground = "#fefefe" # Pure White - Emphasis
+
+[colors.cursor]
+text = "#050a14" # Deep Navy
+cursor = "#5588cc" # Pure Blue
+
+[colors.vi_mode_cursor]
+text = "#050a14" # Deep Navy
+cursor = "#00d4ff" # Bright Cyan
+
+[colors.search.matches]
+foreground = "#050a14" # Deep Navy
+background = "#4a7ba7" # Sky Blue
+
+[colors.search.focused_match]
+foreground = "#050a14" # Deep Navy
+background = "#00d4ff" # Bright Cyan
+
+[colors.footer_bar]
+foreground = "#e0ecf4" # Primary Text
+background = "#0a1018" # Darker Blue
+
+[colors.hints.start]
+foreground = "#050a14" # Deep Navy
+background = "#FDBD85" # Peach Orange - Warnings
+
+[colors.hints.end]
+foreground = "#e0ecf4" # Primary Text
+background = "#0a1018" # Darker Blue
+
+[colors.selection]
+text = "#e0ecf4" # Primary Text
+background = "#2d4a6b" # Ocean Blue
+
+[colors.normal]
+black = "#070c16" # Dark Blue - Borders
+red = "#A167A5" # Soft Purple - Errors
+green = "#99FFE4" # Success Green
+yellow = "#FDBD85" # Peach Orange - Warnings
+blue = "#5588cc" # Pure Blue
+magenta = "#87ceeb" # Light Sky Blue
+cyan = "#00d4ff" # Bright Cyan
+white = "#e0ecf4" # Primary Text
+
+[colors.bright]
+black = "#2d4a6b" # Ocean Blue
+red = "#A167A5" # Soft Purple - Errors
+green = "#99FFE4" # Success Green
+yellow = "#FDBD85" # Peach Orange - Warnings
+blue = "#5588cc" # Pure Blue
+magenta = "#87ceeb" # Light Sky Blue
+cyan = "#00d4ff" # Bright Cyan
+white = "#fefefe" # Pure White
+
+# Indexed colors for extended color support
+[[colors.indexed_colors]]
+index = 16
+color = "#FDBD85" # Peach Orange
+
+[[colors.indexed_colors]]
+index = 17
+color = "#4a7ba7" # Sky Blue
+
+[[colors.indexed_colors]]
+index = 18
+color = "#0f1520" # Active Tab Blue
+
+[[colors.indexed_colors]]
+index = 19
+color = "#1a2332" # Card Blue
+
+[[colors.indexed_colors]]
+index = 20
+color = "#708090" # Dimmed Text
+
+[[colors.indexed_colors]]
+index = 21
+color = "#fefefe" # Pure White
