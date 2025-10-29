@@ -1,19 +1,44 @@
-/* Define Bleu theme - inspired by blue gradient wallpaper */
-@define-color background #050a14; /* Darker deep navy from wallpaper */
-@define-color foreground #e8f4f8; /* Light blue-white for text */
-@define-color muted-foreground #6bb6d6; /* Cyan blue for inactive elements */
-@define-color border #2d4a6b; /* Ocean blue for borders */
-@define-color card #1a2332; /* Dark blue for hover/card backgrounds */
-@define-color primary #5588cc; /* Pure blue for focus/active states */
-@define-color destructive #ff6b8a; /* Soft red that complements blue theme */
-@define-color warning #ffb347; /* Warm orange for warnings */
+/* Bleu Design System v1.0 - Waybar Theme */
 
-/* Additional bleu theme colors */
-@define-color bleu-accent #4a7ba7; /* Sky blue for accents */
-@define-color bleu-highlight #6bb6d6; /* Cyan for highlights */
-@define-color bleu-info #87ceeb; /* Light sky blue for info */
-@define-color bleu-hint #4a7ba7; /* Sky blue for hints */
-@define-color bleu-comment #5a7a95; /* Muted blue for comments */
+/* Background Colors - Layered depth system */
+@define-color background #050a14; /* Deep Navy - Primary background */
+@define-color background-darker #070c16; /* Dark Blue - Sidebar, borders */
+@define-color background-panel #0a1018; /* Darker Blue - Floating panels, status bar */
+@define-color background-active #0f1520; /* Active Tab Blue - Active elements */
+@define-color card #1a2332; /* Card Blue - Hover states, cards */
 
-/* Theme-specific aliases for base.css compatibility */
+/* Foreground & Text Colors - High contrast hierarchy */
+@define-color foreground #e0ecf4; /* Primary Text - Main body text */
+@define-color foreground-emphasis #fefefe; /* Pure White - Emphasized text */
+@define-color foreground-dimmed #708090; /* Dimmed Text - Inactive, secondary */
+
+/* Accent & Interactive Colors */
+@define-color primary #5588cc; /* Pure Blue - Secondary actions, types */
+@define-color primary-bright #00d4ff; /* Bright Cyan - Keywords, links, focus */
+@define-color primary-sky #4a7ba7; /* Sky Blue - Numbers, constants */
+@define-color primary-light #87ceeb; /* Light Sky Blue - Strings, info */
+
+/* Border Colors */
+@define-color border #070c16; /* Subtle Border - Inactive borders */
+@define-color border-active #5588cc; /* Active Border - Focused elements */
+@define-color border-focus #00d4ff; /* Focus Border - Selection borders */
+
+/* Semantic & Status Colors */
+@define-color success #99FFE4; /* Success Green - Additions, confirmations */
+@define-color destructive #ff6b8a; /* Soft Purple (error) - Errors, deletions */
+@define-color warning #FDBD85; /* Peach Orange - Warnings, modified states */
+
+/* Ocean Blue for selections and hover states */
+@define-color selection #2d4a6b; /* Ocean Blue - Selections, hover states */
+
+/* Opacity variants for hover/inactive states */
+@define-color selection-hover rgba(45, 74, 107, 0.5); /* 50% opacity */
+@define-color primary-hover rgba(85, 136, 204, 0.5); /* 50% opacity */
+
+/* Legacy aliases for compatibility */
+@define-color muted-foreground #708090; /* Maps to dimmed text */
+@define-color bleu-accent #4a7ba7; /* Maps to sky blue */
+@define-color bleu-highlight #00d4ff; /* Maps to bright cyan */
+@define-color bleu-info #87ceeb; /* Maps to light sky blue */
+@define-color bleu-hint #4a7ba7; /* Maps to sky blue */
 @define-color theme-info @bleu-info;
