@@ -1,135 +1,140 @@
 # Bleu theme for Yazi file manager
 # Based on the VSCode Bleu theme color palette
+# Inspired by kanagawa theme structure
 
-[manager]
-cwd = { fg = "#e8f4f8", bold = true }
+## Bleu Color Palette
+# darkBg        "#050a14" darkest background
+# normalBg      "#0f1520" normal background
+# lightBg       "#2d4a6b" lighter background elements
+# borderGray    "#708090" borders and subtle elements
+# mainFg        "#e8f4f8" main foreground
+# brightFg      "#fefefe" bright foreground
+# subtleFg      "#94a3b8" subtle foreground
+# darkGray      "#7f849c" dark gray
+# mainBlue      "#5588cc" primary blue
+# brightBlue    "#87ceeb" bright blue
+# cyan          "#00d4ff" cyan accent
+# aqua          "#99FFE4" aqua/teal
+# orange        "#ffb347" orange
+# red           "#ff6b8a" red/pink
+# darkRed       "#f38ba8" dark red
+# green         "#a6e3a1" green
 
-# Hovered
-hovered         = { fg = "#fefefe", bg = "#2d4a6b" }
-preview_hovered = { underline = true }
+[mgr]
+marker_copied = { fg = "#a6e3a1", bg = "#a6e3a1" }
+marker_cut = { fg = "#ff6b8a", bg = "#ff6b8a" }
+marker_marked = { fg = "#87ceeb", bg = "#87ceeb" }
+marker_selected = { fg = "#ffb347", bg = "#ffb347" }
 
-# Find
-find_keyword  = { fg = "#050a14", bg = "#00d4ff", bold = true }
-find_position = { fg = "#ffb347", bg = "reset", bold = true }
+cwd = { fg = "#00d4ff", bold = true }
+hovered = { reversed = true }
+preview_hovered = { reversed = true }
 
-# Marker
-marker_selected = { fg = "#99FFE4", bg = "#99FFE4" }
-marker_copied   = { fg = "#ffb347", bg = "#ffb347" }
-marker_cut      = { fg = "#ff6b8a", bg = "#ff6b8a" }
+find_keyword = { fg = "#00d4ff", bg = "#0f1520" }
+find_position = { fg = "#87ceeb" }
 
-# Tab
-tab_active   = { fg = "#e8f4f8", bg = "#0f1520" }
-tab_inactive = { fg = "#708090", bg = "#050a14" }
-tab_width    = 1
+count_copied = { fg = "#0f1520", bg = "#a6e3a1" }
+count_cut = { fg = "#0f1520", bg = "#ff6b8a" }
+count_selected = { fg = "#0f1520", bg = "#00d4ff" }
 
-# Border
 border_symbol = "│"
-border_style  = { fg = "#070c16" }
+border_style = { fg = "#4a7ba7" }
 
-# Highlighting
-syntect_theme = ""
+[tabs]
+active = { fg = "#0f1520", bg = "#00d4ff" }
+inactive = { fg = "#4a7ba7", bg = "#2d4a6b" }
+
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#0f1520", bg = "#5588cc" }
+normal_alt = { fg = "#5588cc", bg = "#2d4a6b" }
+select_main = { fg = "#0f1520", bg = "#87ceeb" }
+select_alt = { fg = "#87ceeb", bg = "#2d4a6b" }
+unset_main = { fg = "#0f1520", bg = "#ffb347" }
+unset_alt = { fg = "#ffb347", bg = "#2d4a6b" }
 
 [status]
-separator_open  = ""
-separator_close = ""
-separator_style = { fg = "#070c16", bg = "#070c16" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall = { fg = "#e0ecf4", bg = "#050a14" }
 
-# Mode
-mode_normal = { fg = "#050a14", bg = "#5588cc", bold = true }
-mode_select = { fg = "#050a14", bg = "#99FFE4", bold = true }
-mode_unset  = { fg = "#050a14", bg = "#87ceeb", bold = true }
+progress_label = { fg = "#00d4ff", bold = true }
+progress_normal = { fg = "#4a7ba7", bg = "#0f1520" }
+progress_error = { fg = "#2d4a6b", bg = "#0f1520" }
 
-# Progress
-progress_label  = { fg = "#e8f4f8", bold = true }
-progress_normal = { fg = "#5588cc", bg = "#2d4a6b" }
-progress_error  = { fg = "#ff6b8a", bg = "#2d4a6b" }
-
-# Permissions
-permissions_t = { fg = "#99FFE4" }
-permissions_r = { fg = "#ffb347" }
-permissions_w = { fg = "#ff6b8a" }
-permissions_x = { fg = "#00d4ff" }
-permissions_s = { fg = "#87ceeb" }
-
-[select]
-border   = { fg = "#5588cc" }
-active   = { fg = "#fefefe", bg = "#5588cc" }
-inactive = { fg = "#e8f4f8" }
-
-# Icons
-[which]
-mask            = { bg = "#0a1018" }
-cand            = { fg = "#00d4ff" }
-rest            = { fg = "#708090" }
-desc            = { fg = "#ffb347" }
-separator       = "  "
-separator_style = { fg = "#2d4a6b" }
-
-[input]
-border   = { fg = "#5588cc" }
-title    = { fg = "#e8f4f8" }
-value    = { fg = "#e8f4f8" }
-selected = { bg = "#2d4a6b" }
-
-[completion]
-border   = { fg = "#5588cc" }
-active   = { fg = "#fefefe", bg = "#5588cc" }
-inactive = { fg = "#e8f4f8" }
-
-[tasks]
-border  = { fg = "#5588cc" }
-title   = { fg = "#e8f4f8" }
-hovered = { fg = "#fefefe", bg = "#2d4a6b" }
+perm_type = { fg = "#99FFE4" }
+perm_read = { fg = "#4a7ba7" }
+perm_write = { fg = "#ff6b8a" }
+perm_exec = { fg = "#00d4ff" }
+perm_sep = { fg = "#5588cc" }
 
 [pick]
-border   = { fg = "#5588cc" }
-active   = { fg = "#fefefe", bg = "#5588cc" }
-inactive = { fg = "#e8f4f8" }
+border = { fg = "#5588cc" }
+active = { fg = "#87ceeb", bold = true }
+inactive = {}
+
+[input]
+border = { fg = "#5588cc" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+[completion]
+border = { fg = "#5588cc" }
+active = { reversed = true }
+inactive = {}
+
+[tasks]
+border = { fg = "#5588cc" }
+title = {}
+hovered = { fg = "#87ceeb" }
+
+[which]
+cols = 2
+separator = " - "
+separator_style = { fg = "#4a7ba7" }
+mask = { bg = "#050a14" }
+rest = { fg = "#4a7ba7" }
+cand = { fg = "#00d4ff" }
+desc = { fg = "#87ceeb" }
 
 [help]
-border = { fg = "#5588cc" }
-title  = { fg = "#e8f4f8" }
-on     = { fg = "#99FFE4" }
-exec   = { fg = "#00d4ff" }
-desc   = { fg = "#708090" }
-hovered = { bg = "#2d4a6b", bold = true }
-footer  = { fg = "#e8f4f8", bg = "#070c16" }
+on = { fg = "#00d4ff" }
+run = { fg = "#5588cc" }
+desc = { fg = "#87ceeb" }
+hovered = { reversed = true, bold = true }
+footer = { fg = "#0f1520", bg = "#00d4ff" }
+
+[notify]
+title_info = { fg = "#a6e3a1" }
+title_warn = { fg = "#ffb347" }
+title_error = { fg = "#ff6b8a" }
 
 [filetype]
-
 rules = [
-	# Images
-	{ mime = "image/*", fg = "#87ceeb" },
+    # images
+    { mime = "image/*", fg = "#87ceeb" },
 
-	# Videos
-	{ mime = "video/*", fg = "#ffb347" },
-	{ mime = "audio/*", fg = "#ffb347" },
+    # media
+    { mime = "{audio,video}/*", fg = "#4a7ba7" },
 
-	# Archives
-	{ mime = "application/zip",             fg = "#ff6b8a" },
-	{ mime = "application/gzip",            fg = "#ff6b8a" },
-	{ mime = "application/x-tar",           fg = "#ff6b8a" },
-	{ mime = "application/x-bzip",          fg = "#ff6b8a" },
-	{ mime = "application/x-bzip2",         fg = "#ff6b8a" },
-	{ mime = "application/x-7z-compressed", fg = "#ff6b8a" },
-	{ mime = "application/x-rar",           fg = "#ff6b8a" },
+    # archives
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ff6b8a" },
 
-	# Documents
-	{ mime = "application/pdf", fg = "#ff6b8a" },
+    # documents
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#00d4ff" },
 
-	# Data
-	{ mime = "application/octet-stream", fg = "#87ceeb" },
-	{ mime = "application/x-executable", fg = "#99FFE4" },
+    # broken links
+    { name = "*", is = "orphan", fg = "#f38ba8" },
 
-	# Empty files
-	{ mime = "inode/x-empty", fg = "#708090" },
+    # executables
+    { name = "*", is = "exec", fg = "#99FFE4" },
 
-	# Special files
-	{ name = "*", is = "orphan", fg = "#ff6b8a" },
-	{ name = "*", is = "exec",   fg = "#99FFE4" },
-
-	# Fallback
-	{ name = "*", fg = "#e8f4f8" },
+    # fallback
+    { name = "*", fg = "#e0ecf4" },
+    { name = "*/", fg = "#5588cc" },
 ]
 
 [icon]
