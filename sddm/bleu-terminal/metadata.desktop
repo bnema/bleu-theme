@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Bleu Terminal
+Description=A terminal/CRT-inspired login theme using the Bleu color palette
+Author=Bleu Theme Project
+Version=1.0.0
+Website=https://github.com/bleu-theme
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Type=sddm-theme
