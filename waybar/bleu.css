@@ -25,7 +25,7 @@
 
 /* Semantic & Status Colors */
 @define-color success #99FFE4; /* Success Green - Additions, confirmations */
-@define-color destructive #ff6b8a; /* Soft Purple (error) - Errors, deletions */
+@define-color destructive #A167A5; /* Soft Purple - Errors, deletions, destructive actions */
 @define-color warning #FDBD85; /* Peach Orange - Warnings, modified states */
 
 /* Ocean Blue for selections and hover states */
