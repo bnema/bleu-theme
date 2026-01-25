@@ -16,25 +16,51 @@ Rectangle {
 
     readonly property string fontFamily: "JetBrainsMono Nerd Font Mono"
     readonly property int fontSize: 18
+    readonly property int logoFontSize: 12
 
     property int currentSessionIndex: sessionModel.lastIndex >= 0 ? sessionModel.lastIndex : 0
     property string hostname: sddm.hostName || "arch"
 
     color: bgColor
 
-    // TTY header - center top
-    Text {
+    // Arch ASCII logo with gradient - above center
+    Column {
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: parent.top
-        anchors.topMargin: parent.height * 0.35
-        text: hostname + " tty1"
-        color: dimmedColor
-        font.family: fontFamily
-        font.pixelSize: fontSize - 4
+        anchors.bottom: loginArea.top
+        anchors.bottomMargin: 30
+        spacing: 0
+
+        // Lines 1-4: bright cyan
+        Text { text: "                   -`"; color: "#00d4ff"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "                  .o+`"; color: "#00d4ff"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "                 `ooo/"; color: "#00d4ff"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "                `+oooo:"; color: "#00d4ff"; font.family: fontFamily; font.pixelSize: logoFontSize }
+
+        // Lines 5-8: transition cyan to blue
+        Text { text: "               `+oooooo:"; color: "#00c4ef"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "               -+oooooo+:"; color: "#00b4df"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "             `/:-:++oooo+:"; color: "#22a4cf"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "            `/++++/+++++++:"; color: "#4494bf"; font.family: fontFamily; font.pixelSize: logoFontSize }
+
+        // Lines 9-13: blue to sky blue
+        Text { text: "           `/++++++++++++++:"; color: "#5588cc"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "          `/+++ooooooooooooo/`"; color: "#5580c0"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "         ./ooosssso++osssssso+`"; color: "#5078b4"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "        .oossssso-````/ossssss+`"; color: "#4a7ba7"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "       -osssssso.      :ssssssso."; color: "#4a7ba7"; font.family: fontFamily; font.pixelSize: logoFontSize }
+
+        // Lines 14-19: dimmed
+        Text { text: "      :osssssss/        osssso+++."; color: "#5a7a9a"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "     /ossssssss/        +ssssooo/-"; color: "#607a94"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "   `/ossssso+/:-        -:/+osssso+-"; color: "#657a90"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: "  `+sso+:-`                 `.-/+oso:"; color: "#6a7a8c"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: " `++:.                           `-/+/"; color: "#6e7a88"; font.family: fontFamily; font.pixelSize: logoFontSize }
+        Text { text: " .`                                 `"; color: "#708090"; font.family: fontFamily; font.pixelSize: logoFontSize }
     }
 
     // Main login area - center
     Column {
+        id: loginArea
         anchors.centerIn: parent
         spacing: 12
 
